@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undefined</title>
+</head>
+
+<body>
+    <script>
+        let name;
+        if (name === undefined) {
+            console.log("undefined");
+        } else {
+            console.log("defined");
+        };
+
+        const names = ["Haris", "Ucup"];
+        delete names[0];
+
+        if (names[0] === undefined) {
+            console.log("Array undefined");
+        }else {
+            console.log(`Arrya defined`);
+        }
+
+        const person = {}
+        if (person.name === undefined){
+            console.log("object undefined")
+        }else {
+            console.log("object defined")
+        }
+
+    </script>
+</body>
+
+</html>

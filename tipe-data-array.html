@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipe data array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = [];
+        
+        let arrayNama = ["Haris", "Ucup", "Mamat"];
+
+        const names = [];
+        names.push("Haris");
+        names.push("Ucup", "Mamat");
+
+        console.table(names);
+
+        console.log(names[0]);
+        console.log(names[1]);
+        console.log(names[2]);
+
+        delete names[1]
+
+        console.table(names)
+
+        names[1] = 'diubah'
+
+        console.table(names)
+
+
+
+        // variableArray.push(value)    => Menambah data ke array
+        // variableArray.length         => Untuk mendapatkan panjang Array
+        // variableArray[index]         => Mendapatkan data di posisi index
+        // variableArray[index] = value => Mengubah data di posisi index
+        // delete variableArray[index]  => Menghapus data di posisi index, namun index tidak bergeser
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Arrow</title>
+</head>
+<body>
+    <script>
+        const sayHello = (name) => {
+            const say = `Hello ${name}`;
+            console.log(say);
+        }
+
+        // const sayHello2 = (name) => console.log(`hello ${name}`)
+        const sayHello2 = name => console.log(`hello ${name}`)
+
+        sayHello('Haris')
+        sayHello2("haris")
+        
+
+        const sum = (first, second) => {
+            return first + second;
+        }
+
+        const sum2 = (first, second) => first + second
+
+        console.log(sum(100, 100));
+        console.log(sum2(100, 100));
+
+        function giveMeName(callback) {
+            callback("Haris")
+        }
+
+        giveMeName(name => console.log(`Hello ${name}`))
+
+    </script>
+</body>
+</html>

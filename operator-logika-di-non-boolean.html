@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator logika di non boolean</title>
+</head>
+<body>
+    <script>
+
+        // operator or (||), membaca dari kiri ke kanan
+        // operator ini mengambil nilai pertama yang truthy
+        // jika tidak ada satupun yang bernilai truthy, maka yg terakhir yg diambil
+        console.log("hello" || ''); //hello
+        console.log("" || []); // []
+        console.log("0"|| "NOL"); // "0"
+        console.log(0 || "NOL"); // NOL
+        console.log(null || "NULL"); // NULL
+        console.log(undefined || "UNDEFINED"); // UNDEFINDED
+        console.log(0 || false) //false
+
+        const person = {
+            firstName: "",
+            lastName: "Haris"
+        };
+
+        const name = person.firstName || person.lastName;
+        console.log(name)
+
+        // operator AND (&&), membaca dari kiri ke kanan
+        // operator ini mengambil nilai pertama yang falsy
+        // jika tidak ada satupun yang bernilai falsy, maka yg terakhir yg diambil
+
+        console.log("hello" && ""); // ""
+        console.log("" && []); //""
+        console.log("0" && "NOL"); // "NOL"
+        console.log(0 && "NOL"); // 0
+        console.log(null && "NULL"); // null
+        console.log(undefined && "UNDIFINED"); // undefinded
+        console.log("undifined" && "null"); // null
+
+    </script>
+</body>
+</html>

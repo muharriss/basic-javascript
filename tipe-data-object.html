@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipe data object</title>
+</head>
+<body>
+    <script>
+        const orang = {
+            nama : 'cecep',
+            alamat: 'indonesia'
+        };
+
+        // menambah atau mengubah property/attribute
+        orang["nama"] = "Haris";
+        orang["alamat"] = 'indonesia';
+        orang["umur"] = 20;
+
+        console.log(orang.nama)
+        console.log(orang.alamat)
+        console.log(orang.umur)
+
+        console.table(orang);
+
+        orang["nama"] = 'ucup'
+
+        console.table(orang);
+
+        // menghapus
+        // delete orang["umur"]
+
+
+
+    </script>
+</body>
+</html>
